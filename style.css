@@ -92,17 +92,12 @@ body {
     background-color: #48556a;
 }
 
-.three{
+.three, .five{
     background-color: #ffffff;
 }
 
 .four{
     background-color: hsl(219, 29%, 14%);
-}
-
-.five{
-    background-color: #ffffff;
-    
 }
 
 .one, .two, .four{
@@ -115,4 +110,15 @@ body {
 
 h2{
     margin-bottom: 20px;
+}
+
+@media (max-width: 375px){
+    .table{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagem{
+        right: 10px;
+    }
 }
