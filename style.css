@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', Times, serif; /* Adicione uma fonte de fallback caso a fonte importada falhe */
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.table{
+    width: 81%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .9fr 1fr;
+}
+
+.double-col{
+    grid-column: span 2;
+}
+
+.three, .four{
+    order: 1;
+}
+
+.double-row{
+    grid-row: span 2;
+}
+
+.card{
+    position: relative;
+    padding: 0px 30px 15px 30px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    z-index: -2;
+}
+
+#imagem{
+    position: absolute;
+    right: 80px;
+    z-index: -1;
+    height: 120px;
+}
+
+.card div{
+    z-index: 1;
+}
+
+.title{
+    margin: 35px 0 20px 0px;
+}
+
+.title p{
+    margin-top: 3px;
+    font-size: 13px;
+    opacity: 50%;
+    font-weight: 600;
+}
+
+.title img{
+    float: left;
+    height: 35px;
+    border-radius: 50%;
+    margin: -5px 15px 0 0;
+    border: 3px solid rgba(117, 65, 200, 0.5); /* Opacidade de 50% (0.5) */
+}
+
+.text{
+    margin: 0px 0px 10px ;
+}
+
+.text p{
+    opacity: 50%;
+    font-weight: 500;
+}
+
+.one{
+    background-color:  rgb(117, 65, 200);
+}
+
+.two{
+    background-color: #48556a;
+}
+
+.three{
+    background-color: #ffffff;
+}
+
+.four{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.five{
+    background-color: #ffffff;
+    
+}
+
+.one, .two, .four{
+    color: #fff;
+}
+
+.three, .five{
+    color: #48556a;
+}
+
+h2{
+    margin-bottom: 20px;
+}
